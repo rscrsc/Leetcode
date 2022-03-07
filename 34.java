@@ -33,10 +33,6 @@ class Solution {
         }
     }
     public int[] searchRange(int[] nums, int target) {
-        if(nums.length == 0){
-            int[] res = {-1, -1};
-            return res;
-        }
         int[] res = {findl(nums, target), findr(nums, target)};
         return res;
     }
